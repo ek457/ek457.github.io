@@ -1,0 +1,294 @@
+/* CSS for Oak Studio Official Website */
+
+body {
+    background-color: rgb(222, 242, 242);
+    font-family: MiSans;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    margin: 0, auto;
+    overflow: hidden;
+}
+
+.header b {
+    font-size: 16px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    text-align: center;
+    line-height: 45px;
+    display: inline-block;
+}
+
+.header a {
+    color: rgb(102, 102, 102); 
+    margin-left: 15px;
+}
+
+.header-right {
+    font-size: 16px;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    float: right;
+}
+
+.header-right a {
+    transition: transform 0.5s ease;
+}
+
+.header-right a:hover img {
+    transform: scale(1.1);
+}
+
+.header-right img {
+    padding-top: 12px;
+}
+
+@keyframes colorChange {
+    0% { color: rgb(65, 105, 225); }    /* 深蓝紫色 */
+    9.09% { color: rgb(70, 130, 180); }   /* 深蓝色 */
+    18.18% { color: rgb(100, 149, 237); } /* 浅蓝紫色 */
+    27.27% { color: rgb(123, 104, 238); } /* 紫罗兰蓝色 */
+    36.36% { color: rgb(135, 206, 250); } /* 浅蓝色 */
+    45.45% { color: rgb(100, 149, 237); } /* 浅蓝紫色 */
+    54.55% { color: rgb(65, 105, 225); }    /* 深蓝紫色 */
+    63.63% { color: rgb(72, 61, 139); }     /* 深紫色 */
+    72.72% { color: rgb(100, 149, 237); } /* 浅蓝紫色 */
+    81.81% { color: rgb(70, 130, 180); }    /* 深蓝色 */
+    100% { color: rgb(65, 105, 225); }   /* 深蓝紫色 */
+}
+
+.main {
+    margin: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.content h1 {
+    animation: colorChange 5s infinite;
+}
+
+.works h2 {
+    text-align: center;
+}
+
+/* 专门给友链用的 */
+.works-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.work-divs {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fldt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fldt a {
+    color: #448AFF !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin: 0 auto;
+}
+
+.fldt p {
+    margin: 0;
+    color: #448AFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fldt img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.fldd {
+    margin-left: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+.fldd p {
+    text-align: left;
+    color: maroon;
+}
+/* 结束 */
+
+
+.dev-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.dev-con {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dev-dt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dev-dt a {
+    color: #448AFF !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.dev-dd {
+    margin-left: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+.dev-dd p {
+    text-align: left;
+    color: maroon;
+}
+
+.members {
+    text-align: center;
+}
+
+.member-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.member-divs {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.member-divs img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
+.member-divs h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 按钮/小框居中 */
+.centerpst {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.button {
+    font-family: "MiSans-SemiBold";
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #888888;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.contact-divs {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-divs a {
+    color: #7b7de3;
+    text-decoration: none;
+}
+
+.contact-divs a:hover, .contact-divs a:active, .contact-divs a:visited {
+    color: #7b7de3;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    color: #7a7a7a;
+}
